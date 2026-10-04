@@ -28,9 +28,8 @@ tests/               offline tests, including validation of all .ttl files
 schema.org carries the descriptive profile; the BBC Programmes
 ontology (`po:Place`) adds the catalog alignment used by the
 master-library application. The local registry term `nb:placeSlug`
-is defined in `vocabulary/master-library.ttl`. Internal Airtable
-fields (location id, venue code, short name) stay in the import layer
-and are not published as triples.
+is defined in `vocabulary/master-library.ttl`. Internal fields
+(location id, venue code, short name) are not published as triples.
 
 A resolved place carries the minimal set: postal address (with the
 country as an ISO 3166-1 alpha-2 code), geo-coordinates, and website.
