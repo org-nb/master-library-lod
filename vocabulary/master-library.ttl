@@ -1,0 +1,17 @@
+# Local registry terms for the Nalandabodhi linked-open-data repo.
+#
+# These terms are shared with the master-library catalog vault
+# (ADR-0003) so identities stay compatible across the private catalog
+# and this public data publication.
+
+@prefix nb: <https://data.nalandabodhi.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nb:placeSlug a owl:DatatypeProperty ;
+    rdfs:label "place slug" ;
+    rdfs:comment "Immutable kebab-case slug mapped 1:1 to the place IRI (the file stem). Renaming a place file re-mints its identity, so slugs must never change once the registry is frozen." ;
+    rdfs:domain schema:Place ;
+    rdfs:range xsd:string .

@@ -1,0 +1,27 @@
+[project]
+name = "master-library-lod"
+version = "0.1.0"
+description = "Nalandabodhi linked open data: places, persons, and their connections"
+readme = "README.md"
+authors = [
+    { name = "Daniel Kapitan", email = "daniel@kapitan.net" }
+]
+license = "MIT"
+requires-python = ">=3.14"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "rdflib>=7.2.0",
+    "ruff>=0.16.8",
+    "ty>=0.0.82",
+]
+
+[tool.uv.build-backend]
+module-name = "master_library_lod"
